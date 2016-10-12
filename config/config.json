@@ -1,0 +1,29 @@
+{
+  "config": {
+    "title": "Testwork",
+    "baseUrl": "/",
+    "apiUrl": "http://smktesting.herokuapp.com/api"
+  },
+  "global": {
+    "$": "jquery",
+    "window.jQuery": "jquery",
+    "jQuery": "jquery"
+  },
+  "vendor": [
+    "jquery",
+    "angular",
+    "angular-ui-router",
+    "ui-router-extras",
+    "angular-ui-bootstrap",
+    "angular-restmod",
+    "satellizer",
+    "angularjs-toaster",
+    "angular-mocks/angular-mocks",
+    "angular-resource/angular-resource",
+    "angular-material/angular-material.min",
+    "angular-animate/angular-animate.min",
+    "angular-aria/angular-aria.min",
+    "angular-acl-tahiaji/angular-acl",
+    "ng-lodash/build/ng-lodash.min"
+  ]
+}

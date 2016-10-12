@@ -1,0 +1,11 @@
+<div class="block">
+  <h3>Home Page</h3>
+</div>
+
+<div
+  ng-repeat="product in $ctrl.products"
+  ui-sref="root.app.product({id: product.id})"
+  >
+  <h4>{{product.title}}</h4>
+  <p>{{product.text}}</p>
+</div>
