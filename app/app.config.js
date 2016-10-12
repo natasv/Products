@@ -50,13 +50,14 @@ function config($locationProvider, $resourceProvider, AclProvider, $httpProvider
     permissions: {
       guest: {
         actions: {
-          'home': true
+          'root.app.products': false,
+          'root.app.product': false
         }
       },
       user: {
         actions: {
-          'home' : true,
-          'productDetails': true
+          'root.app.products' : true,
+          'root.app.product': true
         }
       }
     }

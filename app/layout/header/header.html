@@ -1,14 +1,21 @@
-<div class="block">
-
-  This is header
-  <div ng-show="vm.Acl.hasRole('guest')">
-    <button sign-in>Sign In</button>
-    <button sign-up>Sign Up</button>
-  </div>
-
-  <div ng-show="vm.Acl.hasRole('user')">
-    You are logged.
-    <button logout>Logout</button>
-  </div>
-
-</div>
+<md-toolbar>
+ <div class="md-toolbar-tools">
+   <h1>
+     <span>Welcome </span>
+   </h1>
+   <span flex></span>
+   <div ng-show="vm.Acl.hasRole('guest')">
+     <md-button md-no-ink aria-label="Learn More"  sign-in>
+       Sign In
+     </md-button>
+     <md-button md-no-ink aria-label="Learn More" sign-up>
+       Sign Up
+     </md-button>
+   </div>
+   <div ng-show="vm.Acl.hasRole('user')">
+     <md-button md-no-ink aria-label="Learn More" logout>
+      Logout
+     </md-button>
+   </div>
+ </div>
+</md-toolbar>
