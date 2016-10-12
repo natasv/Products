@@ -1,9 +1,14 @@
 <div class="block">
 
   This is header
-  <div>
+  <div ng-show="vm.Acl.hasRole('guest')">
     <button sign-in>Sign In</button>
     <button sign-up>Sign Up</button>
+  </div>
+
+  <div ng-show="vm.Acl.hasRole('user')">
+    You are logged.
+    <button logout>Logout</button>
   </div>
 
 </div>

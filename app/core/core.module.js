@@ -16,3 +16,4 @@ angular.module('core', [])
     /*components*/
     .component('review', require('./components/review/review.component'))
     .component('productDetails', require('./components/product.details/product.details.component'))
+    .component('createReview', require('./components/review/create.review.component'))

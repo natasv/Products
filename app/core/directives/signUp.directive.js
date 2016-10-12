@@ -1,8 +1,8 @@
 module.exports = signUp;
 
-signUp.$inject = [];
+signUp.$inject = ['BaseModel'];
 
-function signUp() {
+function signUp(BaseModel) {
    var directive = {
       restrict: 'A',
       scope: {},
@@ -12,7 +12,11 @@ function signUp() {
    function Link($scope, $elemet) {
 
       $elemet.bind('click', function () {
-        console.log('sign up')
+
+        BaseModel.register({username: "nata", password : 111111})
+          .$promise.then(function(val) {
+            console.log('sign up');
+          });
 
       });
    }

@@ -13,6 +13,12 @@ function BaseModel($resource, App) {
         action : 'login'
       }
     },
+    register : {
+      method : 'POST',
+      params: {
+        action : 'register'
+      }
+    },
     getProducts: {
       method : 'GET',
       isArray: true,
