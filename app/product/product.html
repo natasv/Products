@@ -1,4 +1,4 @@
-<a ui-sref="root.app.products">Select another product</a>
+<!-- <a ui-sref="root.app.products">Select another product</a>
 
 <product-details product="$ctrl.product"></product-details>
 
@@ -11,4 +11,35 @@
 
 <div ng-repeat="review in $ctrl.reviews">
   <review model="review"></review>
+</div> -->
+
+<div class="container">
+  <div class="row content">
+    <div class="top-link">
+      <a ui-sref="root.app.products">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Select another product
+      </a>
+    </div>
+    <div class="wrapper">
+      <product-details product="$ctrl.product"></product-details>
+      <div class="reviews">
+        <div class="reviews__title">
+          <h1>Product reviews</h1>
+        </div>
+        <!-- <a class="main-btn">Leave Review</a> -->
+        <div class="col-lg-3 col-xs-6">
+          <div ng-repeat="review in $ctrl.reviews | limitTo: 4">
+            <review model="review"></review>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div ng-repeat="review in $ctrl.reviews | limitTo: 4 : 8">
+            <review model="review"></review>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>

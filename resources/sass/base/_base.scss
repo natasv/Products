@@ -10,9 +10,7 @@ html, body {
 }
 
 body {
-  background: url('./img/bg.jpg') no-repeat;
   font-family: 'Josefin Sans', sans-serif;
-  color: $color-white;
 }
 
 a {
@@ -24,9 +22,28 @@ a {
     box-sizing: border-box;
 }
 
+.main {
+  background: url('./img/bg.jpg') no-repeat;
+  color: $color-white;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto 50px;
   padding: 0 12px;
   @include clearfix;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.main-btn {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 5px;
+  margin: 0px 0px 0px 10px;
+  color: $color-bg;
+  cursor: pointer;
+  background-color: $color-btns;
 }

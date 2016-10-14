@@ -9,6 +9,7 @@
     font-size: 40px;
   }
 
+  /*MAIN PRODCUTS PAGE*/
   .products {
     padding: 50px;
     min-height: 500px;
@@ -29,6 +30,10 @@
         a {
           color:  $color-white;
 
+          i {
+            font-size: 20px;
+          }
+
           &:hover {
             color: $color-dark;
           }
@@ -38,4 +43,35 @@
 
     }
   }
+
+ /*PRODUCTS DETAILS PAGE*/
+
+ .product__details {
+   img {
+     width: 300px;
+     height:300px;
+   }
+ }
+
+   .top-link {
+     a {
+       font-size: 24px;
+       color:  $color-white;
+
+       i {
+         font-size: 20px;
+       }
+
+       &:hover {
+         color: $color-dark;
+       }
+     }
+   }
+
+   .reviews {
+      .reviews__title {
+        @include flex-start;
+      }
+   }
+
 }

@@ -1,16 +1,3 @@
-<!-- <div>
-  <h3>Home Page</h3>
-</div>
-
-<div
-  ng-repeat="product in $ctrl.products"
-  ui-sref="root.app.product({id: product.id})"
-  >
-  <h4>{{product.title}}</h4>
-  <p>{{product.text}}</p>
-</div> -->
-
-
 <div class="container">
   <div class="row content">
 
@@ -34,7 +21,10 @@
               <div class="link">
                 <a class=""
                 ui-sref="root.app.product({id: product.id})"
-                >Go see details</a>
+                >
+                Go see details
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
               </div>
 
             </div>

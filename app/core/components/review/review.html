@@ -1,4 +1,5 @@
-by {{$ctrl.model.created_by.username}}
-at {{$ctrl.model.created_at | date: 'MMM dd yyyy'}}
-
-<p>{{$ctrl.model.text}}</p>
+<div>
+  <span>by <span class="text-bold">{{$ctrl.model.created_by.username}}</span></span>
+  <span>at <span class="text-bold">{{$ctrl.model.created_at | date: 'MMM dd yyyy'}}</span></span>
+  <p>{{$ctrl.model.text}}</p>
+</div>
