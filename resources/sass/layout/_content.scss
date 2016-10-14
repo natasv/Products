@@ -26,21 +26,7 @@
         padding-right: 80px;
         padding-top: 20px;
         font-size: 24px;
-
-        a {
-          color:  $color-white;
-
-          i {
-            font-size: 20px;
-          }
-
-          &:hover {
-            color: $color-dark;
-          }
-        }
-
       }
-
     }
   }
 
@@ -56,15 +42,6 @@
  .top-link {
    a {
      font-size: 24px;
-     color:  $color-white;
-
-     i {
-       font-size: 20px;
-     }
-
-     &:hover {
-       color: $color-dark;
-     }
    }
  }
 

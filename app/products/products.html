@@ -2,16 +2,25 @@
   <div class="row content">
 
     <div class="wrapper">
+
       <h1>Products Page</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+      <div>
+        <a ng-class="{'active' : $ctrl.isList}" ng-click="$ctrl.isList = true;">
+          <i class="fa fa-list" aria-hidden="true"></i>
+        </a>
+        <a ng-class="{'active' : !$ctrl.isList}" ng-click="$ctrl.isList = false;">
+          <i class="fa fa-th" aria-hidden="true"></i>
+        </a>
+      </div>
       <div class="products col-lg-12 col-xs-12">
-        <div class="product col-lg-6 col-xs-12"
+        <div class="product col-xs-12"
+          ng-class="{'col-lg-12' : $ctrl.isList, 'col-lg-6' : !$ctrl.isList}"
           ng-repeat="product in $ctrl.products">
             <div class="prduct__content">
-              <div class="prduct__content_image">
+              <div class="prduct__content_image" ng-show="!$ctrl.isList">
                 <img src="./img/watch.png"/>
               </div>
 
