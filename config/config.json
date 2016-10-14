@@ -24,6 +24,8 @@
     "angular-animate/angular-animate.min",
     "angular-aria/angular-aria.min",
     "angular-acl-tahiaji/angular-acl",
-    "ng-lodash/build/ng-lodash.min"
+    "ng-lodash/build/ng-lodash.min",
+    "malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min",
+    "ng-scrollbars/dist/scrollbars.min"
   ]
 }

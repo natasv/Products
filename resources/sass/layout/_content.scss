@@ -53,25 +53,33 @@
    }
  }
 
-   .top-link {
-     a {
-       font-size: 24px;
-       color:  $color-white;
+ .top-link {
+   a {
+     font-size: 24px;
+     color:  $color-white;
 
-       i {
-         font-size: 20px;
-       }
+     i {
+       font-size: 20px;
+     }
 
-       &:hover {
-         color: $color-dark;
-       }
+     &:hover {
+       color: $color-dark;
      }
    }
+ }
 
-   .reviews {
-      .reviews__title {
-        @include flex-start;
-      }
+ .reviews {
+   .reviews__block {
+     height: 300px;
    }
+ }
+
+ .create-review {
+   textarea {
+     background: rgba(255,255,255,0.5);
+     width: 300px;
+     resize: none;
+   }
+ }
 
 }

@@ -9,6 +9,7 @@ angular.module('App', [
    "ngAria",
    "acl",
    "ngLodash",
+   "ngScrollbars",
 
    require('./core/core.module'),
    require('./layout/layout.module'),

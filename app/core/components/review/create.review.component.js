@@ -9,32 +9,40 @@ module.exports = {
    }]
 };
 
-CreateReviewController.$inject = ['ReviewsModel'];
+CreateReviewController.$inject = ['ReviewsModel', '$filter'];
 
-function CreateReviewController (ReviewsModel) {
+function CreateReviewController (ReviewsModel, $filter) {
 
    var _this = this;
 
    this.review = {
      id: this.productId,
      rate: '5',
-     text: 'test'
+     created_by: {
+       username: 'user'
+     },
+     created_at: new Date()
    };
 
    this.create = create;
 
+   init();
+
+   function init() {
+     _this.reviews = $filter('orderBy')(_this.reviews, '-created_at');
+   }
+
    function create() {
-
-     createRequest(this.review).then(function(res){
-       console.log(res)
-       _this.reviews.unshift({});
+     var review = angular.copy(_this.review);
+     createRequest(review).then(function(res){
+       _this.reviews.unshift(review);
+       _this.reviews = $filter('orderBy')(_this.reviews, 'created_at');
+       _this.review.text = null;
      });
-
    }
 
    function createRequest(review) {
      return ReviewsModel.postReview(review).$promise;
    }
-
 
 }

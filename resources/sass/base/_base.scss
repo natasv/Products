@@ -38,12 +38,18 @@ a {
   font-weight: bold;
 }
 
-.main-btn {
+a.btn {
   text-decoration: none;
   font-size: 24px;
-  padding: 5px;
+  padding: 5px 20px 5px 20px;
   margin: 0px 0px 0px 10px;
   color: $color-bg;
   cursor: pointer;
   background-color: $color-btns;
+  border-radius: 24px;
+
+  &:hover {
+    color: $color-btns;
+    background-color: $color-white;
+  }
 }
