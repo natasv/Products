@@ -1,5 +1,32 @@
 /* HEADER */
 
-.md-toolbar-tools {
-  background: #E91E63;
+nav {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  height: auto;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+
+    .menu__btn {
+      text-decoration: none;
+      font-size: 24px;
+      padding: 0 10px 0 10px;
+      color: $color-dark;
+      cursor: pointer;
+
+      &:hover {
+        color: #77a2aa;
+      }
+
+    }
+  }
+
 }

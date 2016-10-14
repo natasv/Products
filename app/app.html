@@ -18,11 +18,11 @@
 </head>
 <body>
 
-    <div layout="column">
+
       <toaster-container></toaster-container>
       <div data-ui-view></div>
-    </div>
-  
+
+
 {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
 <script src="{%= o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
 {% } %}

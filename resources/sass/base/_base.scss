@@ -1,18 +1,19 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i');
 
-html {
-
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-
+  background-color: $color-bg;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
     outline: none !important;
-}
-
-.block {
-  padding: 50px;
+    box-sizing: border-box;
 }
