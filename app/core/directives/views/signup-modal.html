@@ -1,0 +1,33 @@
+<div class="modal-header">
+  <div class="text-center">
+    <h4>Sin Up Modal</h4>
+  </div>
+</div>
+<div class="modal-body" >
+  <form name="$ctrl.signupForm" novalidate>
+    <div class="form-group">
+      <label for="username" >Username:</label>
+      <input type="text" name="username" class="form-control"
+          ng-model="$ctrl.model.username"
+          ng-required="true">
+      <span class="text-danger"
+       ng-show="$ctrl.signupForm.username.$error.required && $ctrl.submited">
+       This field is required
+      </span>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" name="password" class="form-control"
+          ng-model="$ctrl.model.password"
+          ng-required="true"
+          >
+      <span class="text-danger"
+       ng-show="$ctrl.signupForm.password.$error.required && $ctrl.submited">
+       This field is required
+      </span>
+    </div>
+    <div class="form-group text-center">
+        <a class="btn" ng-click="$ctrl.submit($ctrl.signupForm)">Submit</a>
+    </div>
+  </form>
+</div>

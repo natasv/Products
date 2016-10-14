@@ -8,7 +8,10 @@ function ModalService($uibModal, App) {
   this.signUpModal = function() {
     $uibModal.open({
       size: 'sm',
-      templateUrl: App.template('core/directives/views/login-modal')
+      bindToController: 'true',
+      controllerAs: '$ctrl',
+      controller: 'SignupCtrl',
+      templateUrl: App.template('core/directives/views/signup-modal')
     });
   };
 }
