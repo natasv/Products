@@ -26,6 +26,7 @@
     "angular-acl-tahiaji/angular-acl",
     "ng-lodash/build/ng-lodash.min",
     "malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min",
-    "ng-scrollbars/dist/scrollbars.min"
+    "ng-scrollbars/dist/scrollbars.min",
+    "angular-ui-router-anim-in-out/anim-in-out"
   ]
 }

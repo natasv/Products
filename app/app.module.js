@@ -10,6 +10,7 @@ angular.module('App', [
    "acl",
    "ngLodash",
    "ngScrollbars",
+   "anim-in-out",
 
    require('./core/core.module'),
    require('./layout/layout.module'),

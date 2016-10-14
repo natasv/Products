@@ -14,7 +14,7 @@ function appRoutes ($stateProvider, $urlRouterProvider) {
       .state('root', {
          abstract: true,
          template: '<div ui-view="header"></div>'+
-                   '<div ui-view=""></div>'
+                   '<div ui-view="" ></div>'
       })
 
       .state('root.app', {
@@ -24,7 +24,7 @@ function appRoutes ($stateProvider, $urlRouterProvider) {
              template : '<header></header>',
            },
            '' : {
-             template : '<div ui-view></div>',
+             template : '<div ui-view class="anim-in-out anim-fade" data-anim-speed="500"></div>',
            }
          }
       });

@@ -11,5 +11,4 @@ module.exports = {
 ReviewController.$inject = [];
 
 function ReviewController () {
-   console.log(this.model)
 }

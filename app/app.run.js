@@ -1,8 +1,8 @@
 module.exports = runFun;
 
-runFun.$inject = ['DEFAULT_USER', 'DEFAULT_PROFILE', '$rootScope'];
+runFun.$inject = ['$rootScope', 'Acl'];
 
-function runFun(DEFAULT_USER, DEFAULT_PROFILE, $rootScope) {
-  
+function runFun($rootScope, Acl) {
+
 
 }

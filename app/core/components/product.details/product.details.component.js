@@ -11,5 +11,4 @@ module.exports = {
 DetailsController.$inject = [];
 
 function DetailsController () {
-   console.log(this.product)
 }
