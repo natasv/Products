@@ -4,8 +4,12 @@
   padding-top: 80px;
   position: relative;
 
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
   .products {
-    border: 1px dashed #000;
     padding: 50px;
     min-height: 500px;
 
@@ -21,6 +25,15 @@
         padding-right: 80px;
         padding-top: 20px;
         font-size: 24px;
+
+        a {
+          color:  $color-white;
+
+          &:hover {
+            color: $color-dark;
+          }
+        }
+
       }
 
     }

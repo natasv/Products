@@ -10,8 +10,13 @@ html, body {
 }
 
 body {
-  background-color: $color-white;
+  background: url('./img/bg.jpg') no-repeat;
   font-family: 'Josefin Sans', sans-serif;
+  color: $color-white;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 * {
