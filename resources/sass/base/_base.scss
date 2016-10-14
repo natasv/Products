@@ -76,7 +76,7 @@ a.btn {
 
 .toast {
   background: $color-white;
-  z-index: 10;
+  z-index: 99999;
   color: $color-dark;
   width: 300px;
   height: auto;
@@ -87,4 +87,5 @@ a.btn {
   position: fixed;
   margin: 5px;
   font-size: 18px;
+  text-align: center;
 }

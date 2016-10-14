@@ -1,8 +1,8 @@
 module.exports = signIn;
 
-signIn.$inject = ['Acl', '$state', 'BaseModel'];
+signIn.$inject = ['ModalService'];
 
-function signIn(Acl, $state, BaseModel) {
+function signIn(ModalService) {
    var directive = {
       restrict: 'A',
       scope: {},
@@ -11,16 +11,7 @@ function signIn(Acl, $state, BaseModel) {
 
    function Link($scope, $elemet) {
       $elemet.bind('click', function () {
-
-        BaseModel.login({username: "nata", password : 111111})
-          .$promise.then(function(val) {
-            console.log('sign in');
-            console.log(val)
-            Acl.login('user', val);
-            $state.go('root.app.products');
-
-          });
-
+        ModalService.LoginModal();
       });
    }
 

@@ -20,3 +20,4 @@ angular.module('core', [])
     .component('createReview', require('./components/review/create.review.component'))
     /*controllers*/
     .controller('SignupCtrl', require('./controllers/auth/signup.controller'))
+    .controller('LoginCtrl', require('./controllers/auth/login.controller'))
