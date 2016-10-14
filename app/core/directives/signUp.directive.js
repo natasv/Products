@@ -1,8 +1,8 @@
 module.exports = signUp;
 
-signUp.$inject = ['BaseModel'];
+signUp.$inject = ['BaseModel', 'ModalService'];
 
-function signUp(BaseModel) {
+function signUp(BaseModel, ModalService) {
    var directive = {
       restrict: 'A',
       scope: {},
@@ -13,10 +13,12 @@ function signUp(BaseModel) {
 
       $elemet.bind('click', function () {
 
-        BaseModel.register({username: "nata", password : 111111})
-          .$promise.then(function(val) {
-            console.log('sign up');
-          });
+        ModalService.signUpModal();
+
+        // BaseModel.register({username: "nata", password : 111111})
+        //   .$promise.then(function(val) {
+        //     console.log('sign up');
+        //   });
 
       });
    }

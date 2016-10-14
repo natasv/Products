@@ -5,6 +5,7 @@ angular.module('core', [])
       /*services*/
     .service('BaseModel',require('./models/BaseModel'))
     .service('ReviewsModel',require('./models/ReviewsModel'))
+    .service('ModalService',require('./services/ModalService'))
       /*directives*/
     .directive('logout',require('./directives/logout.directive'))
     .directive('backBtn',require('./directives/backBtn.directive'))
