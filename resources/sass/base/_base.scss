@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
 
 html, body {
   height: 100%;
@@ -9,11 +10,18 @@ html, body {
 }
 
 body {
-  background-color: $color-bg;
+  background-color: $color-white;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
     outline: none !important;
     box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 0 12px;
+  @include clearfix;
 }

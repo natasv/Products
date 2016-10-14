@@ -1,1 +1,28 @@
 /* CONTENT */
+
+.content {
+  padding-top: 80px;
+  position: relative;
+
+  .products {
+    border: 1px dashed #000;
+    padding: 50px;
+    min-height: 500px;
+
+    .product {
+
+      .prduct__content_image img {
+        width:200px;
+        height:200px;
+      }
+
+      .link {
+        @include flex-end;
+        padding-right: 80px;
+        padding-top: 20px;
+        font-size: 24px;
+      }
+
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<div class="block">
+<!-- <div>
   <h3>Home Page</h3>
 </div>
 
@@ -8,4 +8,38 @@
   >
   <h4>{{product.title}}</h4>
   <p>{{product.text}}</p>
+</div> -->
+
+
+<div class="container">
+  <div class="row content">
+
+    <div class="wrapper">
+      <h1>Products Page</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <div class="products col-lg-12 col-xs-12">
+        <div class="product col-lg-6 col-xs-12"
+          ng-repeat="product in $ctrl.products">
+            <div class="prduct__content">
+              <div class="prduct__content_image">
+                <img src="https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg"/>
+              </div>
+
+              <h2>{{product.title}}</h2>
+              <p>{{product.text}}</p>
+              
+              <div class="link">
+                <a class=""
+                ui-sref="root.app.product({id: product.id})"
+                >Go see details</a>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
