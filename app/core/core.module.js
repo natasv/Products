@@ -11,9 +11,6 @@ angular.module('core', [])
     .directive('backBtn',require('./directives/backBtn.directive'))
     .directive('signIn',require('./directives/signIn.directive'))
     .directive('signUp',require('./directives/signUp.directive'))
-      /*constants*/
-    .constant('DEFAULT_USER',require('./constants/user.constant'))
-    .constant('DEFAULT_PROFILE',require('./constants/profile.constant'))
     /*components*/
     .component('review', require('./components/review/review.component'))
     .component('productDetails', require('./components/product.details/product.details.component'))

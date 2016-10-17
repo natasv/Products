@@ -26,6 +26,6 @@ function ModalService($uibModal, App) {
       templateUrl: App.template('core/directives/views/login-modal')
     })
 
-    $uibModal.open(params);
+    return $uibModal.open(params);
   };
 }

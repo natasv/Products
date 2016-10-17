@@ -5,7 +5,6 @@ AppProvider.$inject = [];
 function AppProvider() {
   var provider = this;
 
-  provider.config = {};
   provider.template = template;
   provider.$get = App;
 
@@ -17,14 +16,6 @@ function AppProvider() {
     var app = {
       template: template
     };
-
-    Object.defineProperties(app, {
-      config: {
-        get: function() {
-          return provider.config;
-        }
-      }
-    });
 
     return app;
   }
