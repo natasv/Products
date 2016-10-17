@@ -1,4 +1,5 @@
-# Angular Skeleton
+#  Products testwork
+## angular+slicing+webpack
 
 1. npm install
 2. bower intasll
